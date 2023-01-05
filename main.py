@@ -63,11 +63,11 @@ def arere(kyun, limit):
 def arara(apikey):
 	ky = keyMe[apikey]
 	if ky['limit'] < 1:
-		return {'creator':'Tobz','status': False, 'error': 'APIKEY LU DAH MAX HARI INI'}
+		return {'creator':'ZansLord','status': False, 'error': 'APIKEY LU DAH MAX HARI INI'}
 	else:
 		ntapz = {'limit': ky['limit'] -1,'from': ky['from'],'exp': ky['exp'],'status': ky['status']}
 		keyMe.update({apikey: ntapz})
-		return {'creator':'Tobz','status': True}
+		return {'creator':'ZansLord','status': True}
 def now_date():
 	l_bln = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agt','Sep','Okt','Nov','Dec']
 	waktu = datetime.now(utc).astimezone(timezone('Asia/Jakarta'))
@@ -299,7 +299,7 @@ def photooxy():
 					text = request.args.get('text')
 					result = px.shadow(text)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			else:return {'error': 'Theme tersebut tidak ditemukan'}
 		else:return {'error': 'Theme tersebut tidak ditemukan'}
 	else:return {'message': 'Anda belum memasukan parameter : theme'}
@@ -318,7 +318,7 @@ def textpro():
 					text2 = request.args.get('text2')
 					result = tp.glitchz(text, text2)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'jokerlogo':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -327,7 +327,7 @@ def textpro():
 					text = request.args.get('text')
 					result = tp.jokerlogo(text)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'blood':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -336,7 +336,7 @@ def textpro():
 					text = request.args.get('text')
 					result = tp.blood(text)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'snow':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -345,7 +345,7 @@ def textpro():
 					text = request.args.get('text')
 					result = tp.snow(text)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'dropwater':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -354,7 +354,7 @@ def textpro():
 					text = request.args.get('text')
 					result = tp.dropwater(text)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'neon_technology':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -363,7 +363,7 @@ def textpro():
 					text = request.args.get('text')
 					result = tp.neon_technology(text)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'neon_light':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -372,7 +372,7 @@ def textpro():
 					text = request.args.get('text')
 					result = tp.neon_light(text)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'lionlogo':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -382,7 +382,7 @@ def textpro():
 					text2 = request.args.get('text2')
 					result = tp.lionlogo(text, text2)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'wolflogo1':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -392,7 +392,7 @@ def textpro():
 					text2 = request.args.get('text2')
 					result = tp.wolflogo1(text, text2)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'wolflogo2':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -402,7 +402,7 @@ def textpro():
 					text2 = request.args.get('text2')
 					result = tp.wolflogo2(text, text2)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			elif theme.lower() == 'ninjalogo':
 				if request.args.get('apikey') in keyMe:
 					key = request.args.get('apikey')
@@ -412,7 +412,7 @@ def textpro():
 					text2 = request.args.get('text2')
 					result = tp.ninjalogo(text, text2)
 					return result
-				else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+				else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 			else:return {'error': 'Theme tersebut tidak ditemukan'}
 		else:return {'error': 'Theme tersebut tidak ditemukan'}
 	else:return {'message': 'Anda belum memasukan parameter : theme'}
@@ -458,7 +458,7 @@ def spamgimel():
 						'status': False,
 						'logs': hasil
 					}
-			else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+			else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 		else:return {'status': False,'msg': 'Masukkan parameter jum'}
 	else:return {'status': False,'msg': 'Masukkan parameter target'}
 
@@ -470,7 +470,7 @@ def spamcall():
 			if request.args.get('apikey') in keyMe:
 				q = request.args.get('query')
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -485,7 +485,7 @@ def spamcall():
 					'status': 200,
 					'logs': hasil
 				}
-			else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+			else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 		else:return {'status': False,'msg': '[!] Tolong masukkan nomor dengan awalan 8'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter no' }
 
@@ -498,7 +498,7 @@ def spamming():
 				jum = int(request.args.get('jum'))
 				q = request.args.get('query')
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -540,20 +540,20 @@ def nulis_maker():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				hihi = f'result/{str(random.random())[10:]}.jpg'
 				nulis(text)
 				return {
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'status': 200,
-					"result": 'https://tobz-api.herokuapp.com/%s' % hihi
+					"result": 'https://elaina.up.railway.app/%s' % hihi
 					}
-			except Exception as e:print (e);return {'creator':'Tobz','status': False,'error': '[!] Upss, terjadi kesalahan'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
-	else:return {'creator': 'Tobz','status': False,'message': '[!] Masukkan parameter text'}
+			except Exception as e:print (e);return {'creator':'ZansLord','status': False,'error': '[!] Upss, terjadi kesalahan'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
+	else:return {'creator': 'ZansLord','status': False,'message': '[!] Masukkan parameter text'}
 
 @app.route('/api/katahilih', methods=['GET','POST'])
 def hilih():
@@ -561,7 +561,7 @@ def hilih():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -579,12 +579,12 @@ def hilih():
 						pesan.append(i)
 						result = ''.join(pesan)
 					return {
-						'creator': 'Tobz',
+						'creator': 'ZansLord',
 						'status': 200,
 						'kata': result
 					}
 			except Exception as e:print(e);return {'status': False,'error': '[❗] Yang anda cari tidak bisa saya temukan di wikipedia!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan param q'}
 
 @app.route('/api/wiki', methods=['GET','POST'])
@@ -593,7 +593,7 @@ def wikipedia():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -604,12 +604,12 @@ def wikipedia():
 				hueh = re.findall(r'(\d+)', str(heuh_))
 				result = heuh_[hueh[0]]['extract']
 				return {
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'status': 200,
 					'result': result
 				}
 			except Exception as e:print(e);return {'status': False,'error': '[❗] Yang anda cari tidak bisa saya temukan di wikipedia!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan param q'}
 
 @app.route('/api/tts', methods=['GET','POST'])
@@ -618,7 +618,7 @@ def tts():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -637,9 +637,9 @@ def tts():
 						open('tts/tts.mp3','wb').write(Tts)
 						return {
 							'status': 200,
-							'creator': 'Tobz',
+							'creator': 'ZansLord',
 							'msg': 'Success convert text to speech!',
-							'file': 'https://tobz-api.herokuapp.com/tts/tts.mp3'
+							'file': 'https://elaina.up.railway.app/tts/tts.mp3'
 						}
 					else:
 						Tts = get(f'{url}{apikey}').content
@@ -647,10 +647,10 @@ def tts():
 						return {
 							'status': 200,
 							'msg': 'Success convert text to speech!',
-							'file': 'https://tobz-api.herokuapp.com/tts/tts.mp3'
+							'file': 'https://elaina.up.railway.app/tts/tts.mp3'
 						}
 			except Exception as e:print(e);return {'status': False,'msg': '[!] Upss, terjadi kesalahan'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': 200,'msg': '[!] Masukkan parameter text'}
 
 @app.route('/api/ytv', methods=['GET','POST'])
@@ -659,7 +659,7 @@ def ytv():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -681,7 +681,7 @@ def ytv():
 					'ext': 'mp4'
 				}
 			except Exception as e:print(e);return {'status': False,'error': '[❗] Terjadi kesalahan, mungkin link yang anda kirim tidak valid!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'Masukkan parameter url'}
 
 @app.route('/api/yta', methods=['GET','POST'])
@@ -690,7 +690,7 @@ def yta():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -711,7 +711,7 @@ def yta():
 					'ext': 'mp3'
 				}
 			except Exception as e:print('Error : %s' % e);return {'status': False,'error': '[❗] Terjadi kesalahan mungkin link yang anda kirim tidak valid!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter url'}
 
 @app.route('/api/chord', methods=['GET','POST'])
@@ -720,7 +720,7 @@ def chord():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -733,7 +733,7 @@ def chord():
 					'result': result
 				}
 			except Exception as e:print(e);return {'status': False,'error': '[❗] Maaf chord yang anda cari tidak dapat saya temukan!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter q'}
 
 @app.route('/api/film2', methods=['GET','POST'])
@@ -742,7 +742,7 @@ def zfilm2():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -753,7 +753,7 @@ def zfilm2():
 				thumbnail = shorturl(thumb)
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result': {
 							'judul': film2['Title'],
 							'tahun': film2['Year'],
@@ -793,7 +793,7 @@ def igeh():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -811,7 +811,7 @@ def igeh():
 						'result': result['descriptionc'],
 					}
 			except Exception as e:print(e);return {'status': False,'result': 'https://c4.wallpaperflare.com/wallpaper/976/117/318/anime-girls-404-not-found-glowing-eyes-girls-frontline-wallpaper-preview.jpg','error': True}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter url'}
 
 @app.route('/api/ttp', methods=['GET','POST'])
@@ -820,7 +820,7 @@ def ttpz():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -831,10 +831,10 @@ def ttpz():
 				return {
 					'status': 200,
 					'base64': ttp['base64'],
-					'creator': 'Tobz'
+					'creator': 'ZansLord'
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Text yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter text'}
 
 @app.route('/api/facebook', methods=['GET','POST'])
@@ -843,7 +843,7 @@ def zfb():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -853,14 +853,14 @@ def zfb():
 				print(fb)
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result':{
 						'kualitasHD': fb['resultHD'],
 						'kualitasSD': fb['resultSD']
 					}
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Url yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter url'}
 
 @app.route('/api/artinama', methods=['GET','POST'])
@@ -869,7 +869,7 @@ def artin():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -880,10 +880,10 @@ def artin():
 				return {
 					'status': 200,
 					'result': art['result'],
-					'creator': 'Tobz'
+					'creator': 'ZansLord'
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Text yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter text'}
 
 @app.route('/api/kbbi', methods=['GET','POST'])
@@ -892,7 +892,7 @@ def kbbz():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -901,10 +901,10 @@ def kbbz():
 				return {
 					'status': 200,
 					'result': url,
-					'creator': 'Tobz'
+					'creator': 'ZansLord'
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Kata yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter kata'}
 
 @app.route('/api/jadwalshalat', methods=['GET','POST'])
@@ -913,7 +913,7 @@ def jshalat():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -923,7 +923,7 @@ def jshalat():
 				print(hslt)
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result':{
 						'imsak': hslt['results']['datetime'][0]['times']['Imsak'],
 						'sunrise': hslt['results']['datetime'][0]['times']['Sunrise'],
@@ -937,7 +937,7 @@ def jshalat():
 					}
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Daerah yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter daerah'}
 
 @app.route('/api/joox', methods=['GET','POST'])
@@ -946,7 +946,7 @@ def zjoox():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -956,7 +956,7 @@ def zjoox():
 				print(rsp)
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result':{
 						'album': rsp['result']['msong'],
 						'judul': rsp['result']['msinger'],
@@ -966,7 +966,7 @@ def zjoox():
 					}
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Query yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter q'}
 
 @app.route('/api/lirik', methods=['GET','POST'])
@@ -975,7 +975,7 @@ def zlirik():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -985,7 +985,7 @@ def zlirik():
 				print(lrk)
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result':{
 						'album': lrk['result']['msong'],
 						'judul': lrk['result']['msinger'],
@@ -995,7 +995,7 @@ def zlirik():
 					}
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Query yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter q'}
 
 @app.route('/api/simsimi', methods=['GET','POST'])
@@ -1004,7 +1004,7 @@ def simi():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1015,10 +1015,10 @@ def simi():
 				return {
 					'status': 200,
 					'result': kata,
-					'creator': 'Tobz'
+					'creator': 'ZansLord'
 				}
 			except:return {'status': False,'error': '[❗] Maaf, Text yang anda masukan salah!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter text'}
 
 @app.route('/api/cuaca', methods=['GET','POST'])
@@ -1027,7 +1027,7 @@ def zcuaca():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1036,7 +1036,7 @@ def zcuaca():
 				weather = get(url, headers={'User-Agent': 'Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36'}).json()
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result': {
 							'tempat': weather['respon']['tempat'],
 							'cuaca': weather['respon']['cuaca'],
@@ -1064,17 +1064,17 @@ def zhappymod():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('q')
 				data = []
 				url = bsoup("https://www.happymod.com/search.html?q={}".format(query))
-				tobz = url.find('div', class_='pdt-app-box')
-				title = tobz.h3.text
-				link = "https://www.happymod.com"+tobz.a['href']
-				image = tobz.img['data-original']
+				ZansLord = url.find('div', class_='pdt-app-box')
+				title = ZansLord.h3.text
+				link = "https://www.happymod.com"+ZansLord.a['href']
+				image = ZansLord.img['data-original']
 				url2 = bsoup(link)
 				info = url2.find('div', class_='pdt-app-box')
 				title = info.h1.text
@@ -1083,8 +1083,8 @@ def zhappymod():
 				dl2 = bsoup(dl1)
 				download = "https://www.happymod.com"+dl2.find('div', class_='new-down-title-box').a['href']
 				dlshort = shorturl(download)
-				tobz2 = url2.find('div', class_='new-div-box new-pdt-bg-box')
-				txt = tobz2.findAll('li')
+				ZansLord2 = url2.find('div', class_='new-div-box new-pdt-bg-box')
+				txt = ZansLord2.findAll('li')
 				version = txt[0].text.replace('- Version: ','')
 				size = txt[1].text.replace('- Size: ','')
 				price = txt[2].text.replace('- Price: ','')
@@ -1093,11 +1093,11 @@ def zhappymod():
 				data.append({"title":title,"link":link,"image":image,"version":version,"size":size,"price":price,"root":root,"purchase":purchase,"download":dlshort})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result': data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Apk %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/moddroid', methods=['GET','POST'])
@@ -1106,17 +1106,17 @@ def zmoddroid():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('q')
 				data = []
 				url = bsoup("https://moddroid.com/?s={}".format(query))
-				tobz = url.find('div', class_='col-12 col-md-6 mb-4')
-				title = tobz.a['title']
-				link = tobz.a['href']
-				image = tobz.img['src']
+				ZansLord = url.find('div', class_='col-12 col-md-6 mb-4')
+				title = ZansLord.a['title']
+				link = ZansLord.a['href']
+				image = ZansLord.img['src']
 				info = bsoup(link)
 				dl = info.find('a', class_='btn btn-secondary btn-block mb-3')['href']
 				dl2 = bsoup(dl)
@@ -1131,11 +1131,11 @@ def zmoddroid():
 				hasil = data.append({"title":title,"link":link,"image":image,"publisher":publisher,"genre":genre,"size":size,"latest_version":latest_version,"mod_info":mod_info,"download":download})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result': data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Apk %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/film', methods=['GET','POST'])
@@ -1144,29 +1144,29 @@ def zfilm():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('q')
 				data = []
-				result = {"creator":"Tobz","result": data}
+				result = {"creator":"ZansLord","result": data}
 				url = bsoup("http://167.99.71.200/?s={}&post_type%5B%5D=post&post_type%5B%5D=tv".format(query))
-				for tobz in url.findAll('article', attrs={'itemscope':'itemscope'}):
-					title = tobz.a['title']
-					link = tobz.a['href']
-					img = tobz.img['src']
+				for ZansLord in url.findAll('article', attrs={'itemscope':'itemscope'}):
+					title = ZansLord.a['title']
+					link = ZansLord.a['href']
+					img = ZansLord.img['src']
 					image = shorturl(img)
-					rating = tobz.find('div', class_='gmr-rating-item').text.replace('Rating: ','')+'/10'
-					genre_negara = tobz.find('div', class_='gmr-movie-on').text
+					rating = ZansLord.find('div', class_='gmr-rating-item').text.replace('Rating: ','')+'/10'
+					genre_negara = ZansLord.find('div', class_='gmr-movie-on').text
 					hasil = data.append({"judul":title,"thumb":image,"link":link,"rating":rating,"genre_negara":genre_negara})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result': data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Film %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/film2', methods=['GET','POST'])
@@ -1175,7 +1175,7 @@ def zfilmzs():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1186,7 +1186,7 @@ def zfilmzs():
 				thumbnail = shorturl(thumb)
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result': {
 							'judul': film2['Title'],
 							'tahun': film2['Year'],
@@ -1210,7 +1210,7 @@ def zfilmzs():
 						}
 					}
 			except Exception as e:print(e);return {'status': False,'error': 'Film %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter wilayah'}
 
 @app.route('/api/jamdunia', methods=['GET','POST'])
@@ -1219,27 +1219,27 @@ def zjamdunia():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('lokasi')
 				data = []
-				result = {"creator":"Tobz","result": data}
+				result = {"creator":"ZansLord","result": data}
 				url = bsoup("https://time.is/id/{}".format(query))
-				for Tobz in url.findAll('div', attrs={'id':'time_section'}):
-					title = Tobz.h1.text
-					time = Tobz.find('div', attrs={'id':'clock0_bg'}).text
-					date = Tobz.find('div', class_='w90 tr clockdate').text
-					sun = Tobz.find('span', class_='nw').text
+				for ZansLord in url.findAll('div', attrs={'id':'time_section'}):
+					title = ZansLord.h1.text
+					time = ZansLord.find('div', attrs={'id':'clock0_bg'}).text
+					date = ZansLord.find('div', class_='w90 tr clockdate').text
+					sun = ZansLord.find('span', class_='nw').text
 					hasil = data.append({"title":title,"time":time,"date":date,"sun":sun})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result': data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Url %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/bitly', methods=['GET','POST'])
@@ -1248,7 +1248,7 @@ def bitzly():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1257,11 +1257,11 @@ def bitzly():
 				data = url['data']['url']
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result': data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Url %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter url'}
 
 @app.route('/api/tinyurl', methods=['GET','POST'])
@@ -1270,7 +1270,7 @@ def tinyurlz():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1280,11 +1280,11 @@ def tinyurlz():
 				print(data)
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result': data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Url %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter url'}
 
 #===[ANIME & MANGA]===#
@@ -1295,16 +1295,16 @@ def zbaacakomik():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('q')
 				hasilnya = []
-				result = {"creator":"Tobz","result": hasilnya}
+				result = {"creator":"ZansLord","result": hasilnya}
 				url = bsoup("https://bacakomik.co/?s={}".format(query))
-				tobz = url.find('div', class_='animepost')
-				link = tobz.a['href']
+				ZansLord = url.find('div', class_='animepost')
+				link = ZansLord.a['href']
 				soup = bsoup(link)
 				info = soup.find("div",class_="infox")
 				txt = info.findAll('span')
@@ -1319,7 +1319,7 @@ def zbaacakomik():
 				update = txt[8].text.replace('Update Terakhir: ','')
 				dilihat = txt[9].text.replace('Dilihat: ','')
 				genres = soup.find('div', class_='genre-info').text.replace('\n',', ')
-				rat = tobz.find('div', class_='rating')
+				rat = ZansLord.find('div', class_='rating')
 				rate = rat.findAll('i')
 				rating = rate[0].text
 				for imgz in url.findAll('div', class_='animepost'):
@@ -1329,11 +1329,11 @@ def zbaacakomik():
 					hasil = hasilnya.append({"judul":title,"thumbnail":image,"rating":rating,"link":link,"status":status,"format":format,"dirilis":rilis,"pengarang":pengarang,"jenis_komik":jenis,"umur_pembaca":umur,"cara_baca":cara,"konsep_cerita":konsep,"update_terakhir":update,"genre":genres})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result':hasilnya
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/mangatoon', methods=['GET','POST'])
@@ -1342,17 +1342,17 @@ def zmangatoon():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('q')
 				data = []
 				url = bsoup("https://mangatoon.mobi/en/search?word={}".format(query))
-				tobz = url.find('div', class_='recommend-item')
-				title = tobz.find('div', class_='recommend-comics-title').text.replace('\n                ','').replace('              ','')
-				link = "https://mangatoon.mobi" + tobz.a['href']
-				genre = tobz.find('div', class_='comics-type').text.replace('\n                ','').replace('/',', ').replace('             ','')
+				ZansLord = url.find('div', class_='recommend-item')
+				title = ZansLord.find('div', class_='recommend-comics-title').text.replace('\n                ','').replace('              ','')
+				link = "https://mangatoon.mobi" + ZansLord.a['href']
+				genre = ZansLord.find('div', class_='comics-type').text.replace('\n                ','').replace('/',', ').replace('             ','')
 				info = bsoup(link)
 				star = info.find('div', class_='star').text.replace('\n\n        ','').replace('      ','/5')
 				information = info.find('div', class_='icon-wrap').text.replace('\n\n      ','').replace('      views','views').replace('      \n      ','\n').replace('      likes      \n','likes\n').replace('     \n','').replace('    ','')
@@ -1360,11 +1360,11 @@ def zmangatoon():
 				data.append({"title":title,"link":link,"genre":genre,"star":star,"information":information,"description":description})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result':data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/kiryuu', methods=['GET','POST'])
@@ -1373,22 +1373,22 @@ def zkiryuu():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('q')
 				data = []
-				result = {"creator":"Tobz","result": data}
+				result = {"creator":"ZansLord","result": data}
 				url = bsoup("https://kiryuu.co/?s={}".format(query))
-				for Tobz in url.findAll('div',class_='bs'):
-					title = "{}".format(str(Tobz.find('a')['title']))
-					img = "{}".format(str(Tobz.find('img')['src']))
+				for ZansLord in url.findAll('div',class_='bs'):
+					title = "{}".format(str(ZansLord.find('a')['title']))
+					img = "{}".format(str(ZansLord.find('img')['src']))
 					image = shorturl(img)
-					link = "{}".format(str(Tobz.find('a')['href']))
-					format = Tobz.find('div', class_='limit').text.replace('\n','').replace(' ','')
-					chapter = Tobz.find('div', class_='adds').text.replace('\n','')
-					rating = Tobz.find('div', class_='numscore').text
+					link = "{}".format(str(ZansLord.find('a')['href']))
+					format = ZansLord.find('div', class_='limit').text.replace('\n','').replace(' ','')
+					chapter = ZansLord.find('div', class_='adds').text.replace('\n','')
+					rating = ZansLord.find('div', class_='numscore').text
 					info = bsoup(link)
 					gen = info.find('span', class_='mgen').text.replace(' ',', ')
 					sinopsis = info.find('div', class_='entry-content entry-content-single').text.replace('\n','')
@@ -1399,36 +1399,36 @@ def zkiryuu():
 					hasil = data.append({"title":title,"image":image,"link":link,"format":format,"chapter":chapter,"rating":rating,"follow":follow,"status":status,"type":type,"sinopsis":sinopsis,"genre":gen})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result':data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/nimegamiongoing', methods=['GET','POST'])
 def znimelast():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 		data = []
-		result = {"creator":"Tobz","result": data}
+		result = {"creator":"ZansLord","result": data}
 		url = bsoup("https://nimegami.com/")
 		tbz = url.find('div', class_='post-article')
-		for tobz in tbz.findAll('article'):
-			info = tobz.find('div', class_='info')
+		for ZansLord in tbz.findAll('article'):
+			info = ZansLord.find('div', class_='info')
 			title = info.a['title']
 			link = info.a['href']
-			image = tobz.img['src']
+			image = ZansLord.img['src']
 			hasil = info.findAll('li')
-			rating = tobz.find('div', class_='rating').text
+			rating = ZansLord.find('div', class_='rating').text
 			posted = hasil[0].text.replace('Posted on:','')
 			episode = hasil[2].text.replace('Episode:','')
 			studio = hasil[4].text.replace('Studio:','').replace(',','')
-			tipe = tobz.find('div', class_='bot-post').text.replace(' ',', ')
+			tipe = ZansLord.find('div', class_='bot-post').text.replace(' ',', ')
 			dalem = bsoup(link)
 			data2 = dalem.find('div', class_='info2').findAll('tr')
 			alternatif_title = data2[1].text.replace('Judul Alternatif :','')
@@ -1445,12 +1445,12 @@ def znimelast():
 			data.append({"title":title,"alternatif_title":alternatif_title,"subtitle":subtitle,"image":image,"link":link,"rating":rating,"series":series,"posted_on":posted,"genre":genre,"episode":episode,"duration_episode":durasi_episode,"season_release":season_release,"studio":studio,"type":tipe,"download_episode":{'360p':_360p,'480p':_480p,'720p':_720p}})
 		return {
 			'status': 200,
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'result': data
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1461,7 +1461,7 @@ def znimegami():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1469,14 +1469,14 @@ def znimegami():
 				data = []
 				url = bsoup("https://nimegami.com/?s={}&post_type=post".format(query))
 				tbz = url.find('div', class_='archive')
-				for tobz in tbz.findAll('article'):
-					info = tobz.find('h2', attrs={'itemprop':'name'})
+				for ZansLord in tbz.findAll('article'):
+					info = ZansLord.find('h2', attrs={'itemprop':'name'})
 					title = info.a['title']
 					link = info.a['href']
-					image = tobz.img['src']
-					rating = tobz.find('div', class_='rating-archive').text.replace(' ','')
-					status = tobz.find('div', class_='term_tag-a').text.replace(' ','')
-					tipe = tobz.find('div', class_='terms_tag').text.replace(' ','')
+					image = ZansLord.img['src']
+					rating = ZansLord.find('div', class_='rating-archive').text.replace(' ','')
+					status = ZansLord.find('div', class_='term_tag-a').text.replace(' ','')
+					tipe = ZansLord.find('div', class_='terms_tag').text.replace(' ','')
 					dalem = bsoup(link)
 					data2 = dalem.find('div', class_='info2').findAll('tr')
 					alternatif_title = data2[1].text.replace('Judul Alternatif :','')
@@ -1493,18 +1493,18 @@ def znimegami():
 					data.append({"title":title,"alternatif_title":alternatif_title,"subtitle":subtitle,"duration_episode":durasi_episode,"series":series,"season_release":season_release,"genre":genre,"image":image,"link":link,"rating":rating,"status":status,"type":tipe,"download_batch":{"360p":_360p,"460p":_480p,"720p":_720p}})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result':data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/neonimgongoing', methods=['GET','POST'])
 def zneolast():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1512,19 +1512,19 @@ def zneolast():
 		url = requests.get("https://neonime.vip")
 		tbz = BeautifulSoup(url.content,'html.parser')
 		desc = tbz.find('span', {'class': 'ttx'}).text
-		for Tobz in tbz.findAll('div',class_='item episode-home'):
-			link = "{}".format(str(Tobz.find('a')['href']))
-			title = "{}".format(str(Tobz.find('img')['alt']))
-			image = "{}".format(str(Tobz.find('img')['data-src'])).replace(' ',"")
+		for ZansLord in tbz.findAll('div',class_='item episode-home'):
+			link = "{}".format(str(ZansLord.find('a')['href']))
+			title = "{}".format(str(ZansLord.find('img')['alt']))
+			image = "{}".format(str(ZansLord.find('img')['data-src'])).replace(' ',"")
 			hasil = data.append({"title":title,"desc": desc,"image":image,"link":link})
 		return {
 			'status': 200,
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'result': data
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1535,7 +1535,7 @@ def zneonime():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1544,25 +1544,25 @@ def zneonime():
 				url = requests.get("https://neonime.vip/?s={}".format(query))
 				tbz = BeautifulSoup(url.content,'html.parser')
 				desc = tbz.find('span', {'class': 'ttx'}).text
-				for Tobz in tbz.find_all('div',class_='item episode-home'):
-					link = "{}".format(str(Tobz.find('a')['href']))
-					title = "{}".format(str(Tobz.find('img')['alt']))
-					image = "{}".format(str(Tobz.find('img')['data-src'])).replace(' ',"")
+				for ZansLord in tbz.find_all('div',class_='item episode-home'):
+					link = "{}".format(str(ZansLord.find('a')['href']))
+					title = "{}".format(str(ZansLord.find('img')['alt']))
+					image = "{}".format(str(ZansLord.find('img')['data-src'])).replace(' ',"")
 					hasil = data.append({"title":title,"desc": desc,"image":image,"link":link})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result':data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/anoboyongoing', methods=['GET','POST'])
 def zanolast():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1576,12 +1576,12 @@ def zanolast():
 			hasil = data.append({"title":title,"image":image,"date":date})
 		return {
 			'status': 200,
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'result': data
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1592,13 +1592,13 @@ def zanoboy():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
 				query = request.args.get('q')
 				data = []
-				result = {"creator":"Tobz","result": data}
+				result = {"creator":"ZansLord","result": data}
 				url = requests.get("https://anoboy.tube/?s={}".format(query))
 				rtb = BeautifulSoup(url.content,'html.parser')
 				for rafz in rtb.findAll('div', class_='column-content'):
@@ -1610,11 +1610,11 @@ def zanoboy():
 					hasil = data.append({"title":title,"image":image,"link":link,"date":date})
 				return {
 					'status': 200,
-					'creator':'Tobz',
+					'creator':'ZansLord',
 					'result':data
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/dewabatch', methods=['GET','POST'])
@@ -1623,7 +1623,7 @@ def dewabatch():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1638,7 +1638,7 @@ def dewabatch():
 						'result': dewabatch['info']
 					}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan!' % unquote(q)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter q'}
 
 @app.route('/api/kuso', methods=['GET','POST'])
@@ -1647,7 +1647,7 @@ def kusonime():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1664,14 +1664,14 @@ def kusonime():
 						'link_dl': kuso['link_dl']
 					}
 			except Exception as e:print(e);return {'status': False,'error': 'Anime %s Tidak di temukan' % unquote(q)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter q'}
 
 @app.route('/api/nekonime', methods=['GET','POST'])
 def nekonimek():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1683,7 +1683,7 @@ def nekonimek():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1692,7 +1692,7 @@ def nekonimek():
 def crynime():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1704,7 +1704,7 @@ def crynime():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1713,7 +1713,7 @@ def crynime():
 def kissnime():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1725,7 +1725,7 @@ def kissnime():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1734,7 +1734,7 @@ def kissnime():
 def hugnime():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1746,7 +1746,7 @@ def hugnime():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1755,7 +1755,7 @@ def hugnime():
 def randomanime():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1768,7 +1768,7 @@ def randomanime():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1777,7 +1777,7 @@ def randomanime():
 def shota():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1790,7 +1790,7 @@ def shota():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1799,7 +1799,7 @@ def shota():
 def loli():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1812,7 +1812,7 @@ def loli():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1821,7 +1821,7 @@ def loli():
 def blowjob():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1833,7 +1833,7 @@ def blowjob():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1842,7 +1842,7 @@ def blowjob():
 def hentai():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1854,7 +1854,7 @@ def hentai():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1863,7 +1863,7 @@ def hentai():
 def nsfwneko():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1875,7 +1875,7 @@ def nsfwneko():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1884,7 +1884,7 @@ def nsfwneko():
 def trapnime():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1896,7 +1896,7 @@ def trapnime():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -1909,7 +1909,7 @@ def zssweb():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1918,14 +1918,14 @@ def zssweb():
 				data = ''.join(random.choice(abc) for _ in range(20)) + '.jpg'
 				open('result/%s' % data, 'wb').write(link.content)
 				return {
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'status': 200,
 					'result': {
-						'result': 'https://tobz-api.herokuapp.com/result/%s' % data
+						'result': 'https://elaina.up.railway.app/result/%s' % data
 					}
 				}
 			except Exception as e:print(e);return {'status': False,'error': 'Website %s Tidak di temukan!' % unquote(query)}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': 'input parameter q'}
 
 @app.route('/api/githubprofile', methods=['GET','POST'])
@@ -1934,7 +1934,7 @@ def gprofile():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1945,7 +1945,7 @@ def gprofile():
 				print(gitprof)
 				return {
 					'status': 200,
-					'creator': 'Tobz',
+					'creator': 'ZansLord',
 					'result': {
 						'username': gitprof['login'],
 						'name': gitprof['name'],
@@ -1963,7 +1963,7 @@ def gprofile():
 					}
 				}
 			except Exception as e:print(e);return {'status': False,'error': '[❗] Username salah!!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter username'}
 
 @app.route('/api/stalk', methods=['GET','POST'])
@@ -1972,7 +1972,7 @@ def stalk():
 		if request.args.get('apikey') in keyMe:
 			try:
 				kekeyi = request.args.get('apikey')
-				if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+				if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 				a = keyMe[kekeyi]['limit'] -1
 				wkwk = arere(kekeyi, a)
 				keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -1991,7 +1991,7 @@ def stalk():
 					'Profile_pic': thumb
 				}
 			except Exception as e:print(e);return {'status': False,'error': '[❗] Username salah!!'}
-		else:return {'creator': 'Tobz','status': False,'message': 'APIKEY LU INVALID TOD'}
+		else:return {'creator': 'ZansLord','status': False,'message': 'APIKEY LU INVALID TOD'}
 	else:return {'status': False,'msg': '[!] Masukkan parameter username'}
 
 @app.route('/api/daerah', methods=['GET','POST'])
@@ -2008,7 +2008,7 @@ def daerah():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -2017,7 +2017,7 @@ def daerah():
 def husbu():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -2031,7 +2031,7 @@ def husbu():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -2040,7 +2040,7 @@ def husbu():
 def waifu():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -2066,7 +2066,7 @@ def waifu():
 			}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -2075,7 +2075,7 @@ def waifu():
 def infogempa():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -2094,7 +2094,7 @@ def infogempa():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -2103,7 +2103,7 @@ def infogempa():
 def kpop():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -2116,7 +2116,7 @@ def kpop():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -2126,7 +2126,7 @@ def kpop():
 def quotes():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -2140,7 +2140,7 @@ def quotes():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -2149,7 +2149,7 @@ def quotes():
 def fml():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -2157,13 +2157,13 @@ def fml():
 		tbz = BeautifulSoup(url.content, 'html.parser')
 		res = tbz.find('span', class_='spicy-hidden').text
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': 200,
 			'result': res
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
@@ -2172,7 +2172,7 @@ def fml():
 def quotesnimerandom():
 	if request.args.get('apikey') in keyMe:
 		kekeyi = request.args.get('apikey')
-		if keyMe[kekeyi]['limit'] < 1:return {'creator':'Tobz','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
+		if keyMe[kekeyi]['limit'] < 1:return {'creator':'ZansLord','status': False,'error': 'APIKEY LU DAH MAX HARI INI'}
 		a = keyMe[kekeyi]['limit'] -1
 		wkwk = arere(kekeyi, a)
 		keyMe.update({kekeyi: {'limit': wkwk[0], 'from': wkwk[1], 'exp': wkwk[2], 'status': wkwk[3]}})
@@ -2188,7 +2188,7 @@ def quotesnimerandom():
 		}
 	else:
 		return {
-			'creator': 'Tobz',
+			'creator': 'ZansLord',
 			'status': False,
 			'message': 'APIKEY LU INVALID TOD'
 		}
