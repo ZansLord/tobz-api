@@ -29,7 +29,7 @@ urllib3
 threadpool
 tabulate
 certifi
-charde
+chardet
 requests
 pytz
 kbbi
